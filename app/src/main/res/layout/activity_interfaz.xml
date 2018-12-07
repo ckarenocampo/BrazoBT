@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaz"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Control pinza: "
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abrir "/>
+        <TextView
+            android:id="@+id/lblbgradosPinza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 "
+            android:layout_marginLeft="150dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Cerrar "/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="180"
+        android:progress="85"
+        android:min="0"/>
+
+    <TextView
+        android:id="@+id/txtS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Control brazo: "
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <com.akaita.android.circularseekbar.CircularSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:enabled="true"
+        app:max="180"
+        app:min="30"
+        app:progress="110"
+        app:progressTextSize="26"
+        app:ringColor="@color/colorPrimary"
+        app:ringWidth="0.5"
+        app:showIndicator="true"
+        app:showProgressText="true"
+        app:speedMultiplier="2" />
+
+    <TextView
+        android:id="@+id/txtSe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Control base: "
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <com.akaita.android.circularseekbar.CircularSeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:enabled="true"
+        app:max="180"
+        app:min="0"
+        app:progress="90"
+        app:progressTextSize="26"
+        app:ringColor="@color/colorPrimary"
+        app:ringWidth="0.5"
+        app:showIndicator="true"
+        app:showProgressText="true"
+        app:speedMultiplier="2" />
+
+
+    <ImageView
+        android:id="@+id/btnDesconectar"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/apagar" />
+    <TextView
+        android:id="@+id/IdBufferIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="18dp" />
+
+
+
+</LinearLayout>
